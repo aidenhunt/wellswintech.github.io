@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<p><b>Before you view the data please turn On the light for better view.</b></p>
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180" style="float:right;">
+
+
+
+<p>
+<button type="button" onclick="light(1)" style="float:center;">Light On</button>
+<button type="button" onclick="light(0)" style="float:center;">Light Off</button>
+</p>
+
+<h2>Data Information</h2>
+
+<a href="#" title="type some keywords">
+  <img src="source.gif" alt="HTML tutorial" style="width:250px;height:80px;border:0;" >
+</a>
+
+<p><a href="file:///C:/Users/SKiller/Desktop/HTML/default.htm" target="iframe_a">Click this link to view the data. The data will open in this iframe.</a></p>
+
+</body>
+</html>
